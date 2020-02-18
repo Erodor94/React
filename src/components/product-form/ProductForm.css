@@ -1,0 +1,14 @@
+.form {
+    padding: 20px;
+}
+.form .row {
+    display: flex;
+    margin-bottom: 10px;
+}
+.form .row label {
+    flex: 1;
+}
+.form .row input, 
+.form .row textarea {
+    flex: 3;
+}

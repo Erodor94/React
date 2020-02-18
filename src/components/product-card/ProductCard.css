@@ -1,0 +1,33 @@
+.product-card {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border: 1px solid darkgray;
+    border-radius: 10px;
+    width: 150px;
+    margin-right: 10px;
+    transition: 0.2s ease-in;
+}
+.product-card:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    background: lightgray;
+}
+.product-card img {
+    align-self: center;
+    width: 30px;
+    height: 70px;
+    margin-bottom: 10px;
+}
+.product-card .title {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.product-card .price {
+    margin-bottom: 5px;
+}
+.product-card a {
+    align-self: flex-end;
+    text-decoration: none;
+    margin-top: 10px;
+}

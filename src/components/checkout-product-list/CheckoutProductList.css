@@ -1,0 +1,14 @@
+.checkout-product-list {
+    list-style: none;
+}
+.checkout-product-list li {
+    display: flex;
+    flex-direction: row;
+}
+.checkout-product-list li .product {
+    flex: 2;
+}
+.checkout-product-list li .price {
+    flex: 1;
+    text-align: right;
+}

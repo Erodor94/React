@@ -1,0 +1,10 @@
+section.home {
+    padding: 20px;
+    background: #fff;
+}
+.home .product-list {
+    display: flex;
+}
+section.home ul {
+    list-style: none;
+}
