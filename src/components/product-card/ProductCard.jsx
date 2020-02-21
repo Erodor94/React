@@ -5,7 +5,7 @@ import AddCheckOut from '../add-checkout/AddCheckout'
 import Currency from '../currency/Currency'
 import PropTypes  from 'prop-types'
 
-const ProductCard = ({ id, name, price, image}) =>
+const ProductCard = ({ id, name, price, image, handleRemoveProducts}) =>
 <article className="product-card">
     <img src={image} alt="" />
     <div className="title">{name}</div>
@@ -18,6 +18,8 @@ const ProductCard = ({ id, name, price, image}) =>
 
     <Link to={`/detalhes/${id}`}>+ detalhes</Link>
 
+    <button onClick={() => handleRemoveProducts(id)}>Remover</button>
+
 </article>
 
 ProductCard.propTypes = {
@@ -25,6 +27,7 @@ ProductCard.propTypes = {
     name: PropTypes.string.isRequired,
     price: PropTypes.number.isRequired,
     image: PropTypes.string.isRequired,
+    handleRemoveProducts: PropTypes.func.isRequired
 }
 
 export default ProductCard
